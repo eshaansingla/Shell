@@ -1,0 +1,5 @@
+echo "OS Version: $(uname -a)"
+echo "CPU Info: $(lscpu | grep 'Model name')"
+echo "Memory Usage: $(free -h | grep 'Mem:')"
+echo "Disk Usage: $(df -h | grep '^/dev')"
+echo "Network Details: $(ifconfig | grep 'inet ')"
